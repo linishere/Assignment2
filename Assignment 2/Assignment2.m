@@ -50,7 +50,7 @@ B = [1, -2, -3, -4; 6, 0, 1, 2; -6, 9, 5, 6; 2, 0, 4, 4];
 det_A = det(A);
 det_B = det(B);
 det_AB = det(A*B); 
-inv_det_AB = 1 / det_AB; 
+inv_det_AB = inv(det_AB);
 %% 3c
 
 %% 3d
