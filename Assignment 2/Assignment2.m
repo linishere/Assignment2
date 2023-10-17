@@ -2,26 +2,24 @@
 format short;
 %% 1a
 theta = pi/4
-v = [7, -3]
+v = [7; -3]
 A = [cos(theta), -sin(theta); cos(theta), sin(theta)]
-Av = A .* v
+Av = A * v
 %% 1b 
 k = 3
-v = [7, -3]
+v = [7; -3]
 B = [1, k; 0, 1]
-Bv = B .* v
+Bv = B * v
 %% 1c
-AB = Av .* Bv
-BA = Bv .* Av 
+AB = A * B
+BA = B * A
 %% 1d
-% Check back
 disp('When you apply transformations AB (shear followed by rotation):');
 disp('The order matters, and the result is different from BA.');
 
 disp('When you apply transformations BA (rotation followed by shear):');
 disp('The order matters, and the result is different from AB.');
 %% 1e
-% Check back 
 disp("YES");
 
 %%% Problem 2
