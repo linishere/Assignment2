@@ -14,9 +14,9 @@ B = [1, k; 0, 1]
 disp('the transformation:');
 Bv = B * v
 %% 1c
-disp('first sheer, then rotate:');
+disp('first shear, then rotate:');
 AB = A * B
-disp('first rotate, then sheer:');
+disp('first rotate, then shear:');
 BA = B * A
 %% 1d
 disp('When you apply transformations AB (shear followed by rotation):');
@@ -72,7 +72,7 @@ inv_det_AB = det(inv(A*B))
 disp('According to the theorems from class, (AB)^-1 = B^-1 * A^-1');
 disp('det((AB)^-1) = det(B^-1 * A^-1) = det(B^-1)*det(A^-1) = (1/det(B)) * (1/det(A))');
 inv_det_AB_2 = (1/det_A) * (1/det_B)
-disp('this matches the answer from the previous part.');
+disp('This matches the answer from the previous part.');
 
 %% 3d
 disp('part i');
@@ -134,7 +134,7 @@ disp('the values that make the determinant of A^k equal to 0. So we are solving'
 disp('det(A^k) = 0 for all values of x. We learned in class a property of')
 disp('determinants that det(AB) = det(A)*det(B), so therefore we can also say');
 disp('det(A^k) = det(A)*det(A)* ... * det(A) = (det(A))^k. So we can pull out the k.');
-disp('the only way where (det(A))^k = 0 is when det(A) is equal to 0, which');
+disp('The only way where (det(A))^k = 0 is when det(A) is equal to 0, which');
 disp('we already solved for in 5b. Therefore the values of x where A^k has');
 disp('no inverse is the three values of x that make det(A) = 0:')
 values_of_x_where_A_no_inverse
